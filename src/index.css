@@ -1,13 +1,80 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --primary-color : 'rgb(98,84,243)';
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.btn{
+  font-weight: 500;
+  border: 0.1rem solid rgb(98 84 243);
+color:rgb(98 84 243);
+padding: 7px 20px;
+font-size: 16px;
+  background: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:hover{
+  background-color: rgb(98 84 243);
+  color: #fff;
+        transform: scale(0.9);
+}
+input,textarea{
+  border-color: #fff;
+    outline: none;
+    border: none;
+    background: none;
+    /* width: 30rem; */
+    font-size: 16px;
+    opacity: 0.9;
+    padding: 8px 16px;
+    color: black;
+    border: 0.1rem solid rgb(98 84 243);
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.form-control textarea{
+  resize: none;
+}
+
+
+.card{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0px 50px;
+  gap: 16px;
+}
+.card .card-content{
+  box-shadow: 0  1px 2px rgba(0,0,0,.2);
+  padding: 10px;
+}
+.card-btn{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.delete{
+  color:red;
+  cursor: pointer;
 }
