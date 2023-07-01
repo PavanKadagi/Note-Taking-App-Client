@@ -38,7 +38,6 @@ export default function Home() {
       value.length < 10 ? setCharacterLength(true) : setCharacterLength(false);
     }
 
-    console.log(name, value, characterLength);
     setUser({ ...user, [name]: value });
   };
 
@@ -70,7 +69,6 @@ export default function Home() {
 
         window.location.reload();
         alert(res.message);
-        console.log("res", res);
         setUser({ title: "", description: "" });
       } catch (error) {
         console.log(error);
